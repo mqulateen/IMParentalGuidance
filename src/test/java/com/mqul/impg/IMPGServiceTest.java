@@ -1,4 +1,4 @@
-package com.mqul.impg.scraper;
+package com.mqul.impg;
 
 import com.mqul.impg.impl.IMPGService;
 import com.mqul.impg.model.PGModel;
