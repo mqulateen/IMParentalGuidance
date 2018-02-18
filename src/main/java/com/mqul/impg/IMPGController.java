@@ -13,7 +13,8 @@ public class IMPGController {
 
     @Autowired IMPGService impgService;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @CrossOrigin
+    @GetMapping("/")
     public @ResponseBody List<PGModel> getPGData(@RequestParam(value="imdbRef") String imdbRef) throws IOException
     {
         return impgService.pullPGData(imdbRef);
